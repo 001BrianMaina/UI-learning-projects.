@@ -1,0 +1,207 @@
+html{
+    scrol-behavior: smooth;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    transition: 0.3s;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: rgb(98, 5, 5);
+    color: white;
+    position: sticky;
+    top: 0; 
+    z-index: 1000;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    padding-left: 1000px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+.nav-links a:hover{
+    color: greenyellow;
+}
+
+.home {
+    height: 100vh;
+    background: linear-gradient(to top, rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(img1.png);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+section h1{
+    font-size: 50px;
+    color: orange;
+    padding-bottom: 30px;
+}
+.me{
+    padding-bottom: 20px;
+    font-size: 25px;
+    color: white;
+}
+#btn1 {
+    margin-top: 20px;
+    width: 200px;
+    height: 40px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color:  rgb(98, 5, 5);
+    color: white;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+#btn1:hover{
+    transform: translateY(-4px);
+}
+.middle{
+    background-color: #f4f4f4;
+}
+#about{
+    text-align: center;
+    height: 60vh;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    
+}
+#about h2{
+    font-size: 50px;
+    color: orange;
+    padding-bottom: 20px;
+}
+.lastsection{
+    background-color: #eaeaea;
+    height: 80vh;
+    align-content: center;
+    text-align: center;
+}
+#services h2{
+    text-align: center;
+    padding-top: 15px;
+}
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,  minmax(250px, 1fr) );
+    padding: 20px;
+    gap: 20px;
+}
+
+.card {
+    height: 100px;
+    text-align: center;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px 1px rgba(0,0,0,0.2); 
+    font-size: 20px;
+    color:  rgb(98, 5, 5);
+    margin-bottom: 100px;
+    transition: 0.3s ease;
+}
+.card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+}
+#contact h2{
+    font-size: 40px;
+    padding: 20px;
+    margin-left: 100px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: auto;
+}
+input{
+    height: 40px;
+    width: 500px;
+    padding: 10px;
+    border: 2px #ccc solid;
+    border-radius: 5px;
+}
+input:focus{
+    outline: 2px solid rgb(0, 153, 255);
+    border: none;
+}
+textarea{
+    width: 500px;
+    height: 150px;
+    padding: 10px;
+     border: 2px #ccc solid;
+     border-radius: 5px;
+}
+textarea:focus{
+    outline: 2px solid rgb(0, 153, 255);
+    border: none;
+}
+#btn2{
+    width: 500px;
+    height: 40px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color:  rgb(98, 5, 5);
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom:100px ;
+}
+#btn3{
+    border: none;
+    border-radius: 50%;
+    background-color:orange;
+    color: white;
+    font-size: 30px;
+    width: 50px;
+    padding: 10px;
+    font-weight: bold;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;
+    display: none;
+}
+footer{
+    height: 60px;
+    width: 100%;
+    background-color:#111;
+    text-align: center;
+    align-content: center;
+    color: white;
+}
+/* DARK MODE */
+.dark {
+    background: #111;
+    color: white;
+}
+
+.dark nav {
+    background: black;
+}
